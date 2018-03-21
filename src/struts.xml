@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.multipart.saveDir" value="/tmp" />
+	<constant name="struts.multipart.maxSize" value="100000000" />
+	<package name="gltraffic" namespace="/login" extends="struts-default">
+
+
+		<action name="register" class="com.can.action.RegisterAction">
+			<result name="success">/register.jsp</result>
+			<result name="fail">/register.jsp</result>
+			<result name="input">/register.jsp</result>
+		</action>
+		<action name="newtopic" class="com.can.action.NewTopicAction">
+			<result name="success">/redirecting.jsp</result>
+			<result name="input">/index.jsp</result>
+			<result name="fail">/redirecting.jsp</result>
+		</action>
+		<action name="detailtopic" class="com.can.action.DetailsTopicAction">
+			<result name="success">/topic_detail.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="topiclist" class="com.can.action.TopicListAction">
+			<result name="success">/index.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="userpage" class="com.can.action.UserPageAction">
+			<result name="success">/userpage.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="detaillearn" class="com.can.learnaction.DetailsLearnAction">
+			<result name="success">/detailtrafficlearn.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="detailarticle" class="com.can.action.DetailsArticleAction">
+			<result name="success">/detailarticle.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="detailnotice" class="com.can.action.DetailNoticeAction">
+			<result name="success">/detailnotice.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="morearticlelist" class="com.can.action.ArticleListAction">
+			<result name="success">/morearitle.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+	</package>
+
+	<package name="ajax" namespace="/ajax" extends="struts-default,json-default">
+		<action name="login" class="com.can.action.LoginAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="putegg" class="com.can.action.EggAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="putcomment" class="com.can.action.NewCommentActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="topiclistajax" class="com.can.action.TopicListActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="commentlistajax" class="com.can.action.CommentActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+		<action name="myfollow" class="com.can.action.MyFollowListActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="editinfo" class="com.can.action.EditMyHeadimgnAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="follow" class="com.can.action.FollowTopicAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="mypageinfo" class="com.can.action.MyPageAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="mytopiclist" class="com.can.action.MyTopicListAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="myfollowlist" class="com.can.action.MyFollowListAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="deletetopic" class="com.can.action.DeleteTopicActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="unfollow" class="com.can.action.UnFollowActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="mymessageboard" class="com.can.action.MyMessageBoardActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="aboutme" class="com.can.action.AboutMeActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="aboutmelist" class="com.can.action.AboutMeActionAJAX"
+			method="list">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="getbanner" class="com.can.action.GetBannerImage">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="usertopics" class="com.can.action.UserTopicActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+
+		<action name="newmessageboard" class="com.can.action.NewMessBoardActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+
+		<action name="notictopics" class="com.can.action.NoticeTopicListActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="notictopicspage" class="com.can.action.NoticeTopicListActionAJAX"
+			method="gettopiclist">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="searchtopic" class="com.can.action.SearchTopicActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="articlelist" class="com.can.action.ArticleListActionAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="learnbannerlist" class="com.can.action.ArticleListActionAJAX" method="banner">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+		<action name="getmoreairtle" class="com.can.action.ArticleListActionAJAX" method="all">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		
+	</package>
+
+	<package name="learn" namespace="/learn" extends="struts-default,json-default">
+		<action name="indexlearn" class="com.can.learnaction.TrafficLearnPageAJAX">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+
+	</package>
+	<include file="adminstruts.xml"></include>
+</struts>    

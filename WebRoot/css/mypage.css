@@ -1,0 +1,90 @@
+@CHARSET "UTF-8";
+
+#mypage {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+#mypage .mycontent {
+	margin-top: 10px;
+}
+#mypage a:hover{
+	color: red;
+}
+#mypage .mycontent_left {
+	float: left;
+	width: 20%;
+	margin-left: 10px;
+	margin-bottom:10px;
+	
+}
+
+#mypage .mycontent_right {
+	float: left;
+	width: 77%;
+	margin-left: 20px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	
+}
+
+/*#mypage ul {
+	padding: 0px;
+	margin: 20px 15px 20px 15px;
+}
+
+#mypage li {
+	padding: 0px;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+	margin-top: 10px;
+}*/
+
+#mypage .mycontent_left a {
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.myinfo_left {
+		border : 1px solid #ccc;
+	
+	background-color: #fff;
+	padding: 10px;
+	line-height: 30px;
+}
+
+.myinfo_right {
+	
+}
+
+#mypage .myinfo_left_img {
+	width: 100px;
+	height: 100px;
+	margin:10px auto;
+	background-color: #fff;
+}
+#mypage .myinformation{
+
+	margin-top: 20px;
+	overflow: hidden;
+	font-size: 18px;
+}
+#mypage .mymenu{
+	background-color: #fff;
+	border : 1px solid #ccc;
+	padding: 10px;
+}
+#mypage .mymenu li{
+	margin-top: 10px;
+	list-style-type: none;
+}
+
+.mymenu li:hover{
+	border-left: 3px solid #a81f23;
+}
+.mypage_iconimg{
+	width: 20px!important;
+	float: right;
+	
+}

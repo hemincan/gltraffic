@@ -1,0 +1,216 @@
+@CHARSET "UTF-8";
+
+.shadow {
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,
+		direction=120, strength=4); /*ie*/
+	-moz-box-shadow: 0px 0px 4px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 4px #909090; /*safari或chrome*/
+	box-shadow: 0px 0px 4px #909090; /*opera或ie9*/
+}
+
+#content {
+	width: 1200px;
+	margin: 20px auto;
+	font-family: 微软雅黑;
+}
+
+#content a:hover {
+	background-color: yellow;
+}
+
+#content img {
+	width: 100%;
+	
+}
+
+#content .allleft {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#content .left {
+	float: left;
+	width: 100%;
+	background-color: #ffffff;
+	margin: 10px 5px 10px 5px;
+}
+
+#content .right-user {
+	float: left;
+	width: 17%;
+	margin: 10px 1px 10px 5px;
+	
+}
+
+#content .left-user {
+	float: left;
+	width: 82%;
+	word-break: break-all;
+	border-left: 1px solid #ccc;
+	margin-left: 3px;
+}
+
+#content .right {
+	float: left;
+	width: 98%;
+	margin: 5px 5px 0px 10px;
+	border-color: #ddd;
+	background: #fff;
+	border: 1px solid #ccc;
+}
+
+#content .umediter {
+	float: left;
+	width: 98%;
+	margin: 10px 5px 2px 10px;
+}
+
+#content .umediter img {
+	width: auto;
+}
+
+#content .headimg {
+	margin: 0 auto;
+	background-color: #000000;
+	height: 100px;
+	width: 100px;
+	margin-top: 20px;
+}
+
+#content .userinfo {
+	margin: 0 auto;
+	width: 120px;
+	margin: 10px 15px 10px 15px;
+	
+}
+
+#content .userinfo p {
+	font-size: 13px;
+}
+
+#content .titlet {
+	margin: 0px -3px 2px 0px;
+	background-color: #ffffff;
+}
+
+#content .titlet h1 {
+	font-size: 28px;
+	margin: 0px auto;
+	padding: 10px;
+}
+
+#content .contentt {
+	margin: 0px -3px -0px -0px;
+	padding: 0px 10px 50px 0px;
+	background-color: #ffffff;
+	min-height: 300px;
+	position: relative;
+	background-color: #ffffff;
+}
+
+#content .contentt p {
+	margin: 0px;
+	padding: 15px;
+	font-size: 18px;
+}
+#content .contentt a {
+	color: blue;
+}
+#content .contentt img {
+	width: auto;
+	height: auto;
+}
+#content .contentt video {
+	height: 350px;
+	
+}
+.contentt .contentt_botom {
+	height: 30px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	border-top: 1px solid #ccc;
+	font-size: 20px;
+	text-align: right;
+}
+
+#content .info {
+	margin: 0;
+	padding: 0px 0px 0px 20px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: gray;
+}
+
+#content hr {
+	margin: 5px;
+}
+
+#content .images {
+	margin-left: 20px;
+}
+
+#content .images img {
+	width: 90%;
+	height: auto;
+	margin: 10px;
+}
+
+.comment {
+	background-color: #FCFCFC;
+	min-height: 100px;
+	overflow: hidden;
+
+}
+
+.comment #left {
+	float: left;
+	width: 15%;
+	
+}
+
+.comment #left span {
+	margin: 15px 15px 15px 35px;
+}
+
+.comment #headimg {
+	margin: 15px 15px 15px 35px;
+	width: 70px;
+	height: 70px;
+}
+
+.comment #right {
+	float: left;
+	width: 80%;
+	margin-left: 35px;
+	position: relative;
+}
+
+.comment #right span {
+	font-size: 14px;
+	color: gray;
+}
+
+.comment #mid {
+	border-top: 1px solid;
+	border-color: #eee;
+	padding: 20px;
+}
+
+.comment #mid img {
+	width: auto;
+	height: auto;
+}
+
+.comment #mid p {
+	padding: 0px;
+	margin: 0px;
+	color: #000000;
+	font-size: 20px;
+}
+.recommend{
+	background-color:#eee;
+	margin-top: 20px;
+	font-size: 16px;
+	padding: 20px;
+}

@@ -1,0 +1,237 @@
+@CHARSET "UTF-8";
+
+.shadow {
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,
+		direction=120, strength=4); /*ie*/
+	-moz-box-shadow: 0px 0px 4px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 4px #909090; /*safari或chrome*/
+	box-shadow: 0px 0px 4px #909090; /*opera或ie9*/
+}
+/* tab css*/
+#tab img {
+	width: 100%;
+}
+
+#tab {
+	width: 680px;
+	margin: 10px auto;
+	background-color: #ffffff;
+	overflow: hidden;
+	border : 1px solid #ccc;
+}
+
+#tab:hover {
+	background-color: #fcfcfc;
+}
+
+#tab .user {
+	height: 40px;
+	width: 100%;
+	/*border-bottom:solid 1px #e1e1e1;*/
+	
+}
+
+#tab .headimg {
+	width: 30px;
+	height: 30px;
+	background-color: #000000;
+	float: left;
+	margin: 5px;
+}
+
+#tab .headinfo {
+	float: left;
+}
+
+#tab .time {
+	font-size: 13px;
+	color: gray;
+}
+
+#tab li {
+	
+	float:left;
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#tab .name {
+	font-size: 13px;
+}
+
+#tab .clear {
+	clear: both;
+}
+
+#tab .content {
+	
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+#tab .content img{
+	
+	width: auto;
+}
+#tab .tail {
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: right;
+}
+
+#tab .imgpanel {
+	width: 400px;
+	margin: 13px;
+	
+	/*background-color: #747394;*/
+}
+
+#tab .imgpanel img {
+	float: left;
+	width: 30%;
+	margin: 5px;
+}
+
+#tab video {
+	width: 50%;
+	margin: 5px;
+	vertical-align:top;
+}
+
+#tab .line {
+	height: 1px;
+	background-color: #dddddd;
+}
+
+#tab a {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+}
+
+#tab a:hover {
+	color: #FF0000;
+}
+
+#tab .tab_tiltle {
+	padding: 0px;
+	font-size: 15px;
+	margin: 0px 15px 0px 15px;
+	/*text-indent: 2em;*/
+}
+
+#tab .tab_content {
+	padding: 0px;
+	margin: 8px 15px 0px 15px;
+	font-size: 18px;
+	/*color: blue!important;*/
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	/*text-indent: 2em;*/
+}
+
+#tab .tab_content img {
+	width: 25px;
+	height: 25px;
+}
+#tab .images{
+	padding: 10px;
+	max-height: 150px;
+	overflow: hidden;
+}
+#tab .images img {
+	width: 280px;
+	margin: 3px;
+	vertical-align:top;
+}
+
+#tab .type {
+	font-size:15px;
+	float: right;
+	margin: 5px
+}
+/*新增评论*/
+#tab .comment_below {
+	display: none;
+	font-size: 16px;
+}
+
+#tab .comment_input {
+	margin: 5px;
+	height: 60px;
+	background-color:#fff;
+	border : 1px solid #000;
+	font-size: 16px;
+}
+
+#tab .comment_input img {
+	width: 25px;
+	height: 25px;
+}
+
+#tab .comment_btn {
+	float: right;
+	margin: 0px 10px 0px 10px;
+}
+
+#tab .sample_comment {
+	border-top: 1px solid #bbb;
+}
+#tab .sample_comment #time{
+	color: #aaa;
+}
+#tab .sample_comment #content{
+	min-height: 50px;
+}
+#tab .sample_comment:hover {
+	background-color: #eee;
+}
+
+#tab .sample_comment a {
+	color: blue;
+}
+
+#tab .sample_comment p {
+	padding: 5px;
+	margin: 0px 20px 0px 20px;
+}
+
+#tab .sample_comment img {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+	margin-left: 20px;
+	
+}
+#tab .addcomment{
+	margin-right: 60px;
+	
+	
+}
+#tab .putegg{
+	margin-right: 60px;
+	
+}
+#tab .deletetopic{
+	margin-right: 10px;
+	color: red;
+}
+#tab .followit{
+	margin-right: 10px;
+	padding:2px;
+	border:solid 1px #ccc;
+}
+#tab .unfollow{
+	margin-right: 10px;
+	color: red;
+}
+.iconimg{
+	width: 25px!important;
+}
+.iconimgbig{
+	width: 35px!important;
+}

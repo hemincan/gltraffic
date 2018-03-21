@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="gltrafficadmin" namespace="/admin" extends="struts-default">
+		<action name="usertopics" class="com.can.admin.action.UserTopicsListAction">
+			<result name="success">/adminsystem/topic.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="bannerlist" class="com.can.admin.action.BannerImagesListAction">
+			<result name="success">/adminsystem/banner.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+
+		<action name="uploadimages" class="com.can.admin.action.BannerImagesUploadAction">
+			<result name="success" type="redirect">bannerlist.action</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+
+		<action name="typelist" class="com.can.admin.action.LearnMarkTypeListAction">
+			<result name="success">/adminsystem/marktype.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+
+		<action name="newtype" class="com.can.admin.action.AddNewMarkTypeAction">
+			<result name="success" type="redirect">typelist.action</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+
+		<action name="newnoticeadmin" class="com.can.admin.action.NewNoticeAction">
+			<result name="success" type="redirect">noticelist</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+
+		<action name="noticelist" class="com.can.admin.action.NoticeListAction">
+			<result name="success">/adminsystem/notice.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="deletenotice" class="com.can.admin.action.NoticeListAction" method="delete">
+			<result name="success" type="redirect">noticelist</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="managemark" class="com.can.admin.action.ManageMarkTypeAction">
+			<result name="success">/adminsystem/managemark.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="newarticle" class="com.can.admin.action.NewArticleAction">
+			<result name="success" type="redirect">manneragearticle</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		
+		<action name="manneragearticle" class="com.can.admin.action.ManageArticleAction">
+			<result name="success">/adminsystem/aritle.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="deletearticle" class="com.can.admin.action.ManageArticleAction" method="delete">
+			<result name="success" type="redirect">manneragearticle</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="totalclick" class="com.can.admin.action.StatisticsClickAction">
+			<result name="success">/adminsystem/totalclick.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="areastatistic" class="com.can.admin.action.StatisticsAreaAction">
+			<result name="success">/adminsystem/area.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="typestatistic" class="com.can.admin.action.StatisticsTypeAction">
+			<result name="success">/adminsystem/type.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="typeareastatistic" class="com.can.admin.action.StatisticsAreaandTypeAction">
+			<result name="success">/adminsystem/typeandarea.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="userstatistic" class="com.can.admin.action.StatisticsUserAction">
+			<result name="success">/adminsystem/user.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+		<action name="userlist" class="com.can.admin.action.UserListAction">
+			<result name="success">/adminsystem/userlist.jsp</result>
+			<result name="fail">/adminsystem/fail.jsp</result>
+			<result name="input">/adminsystem/fail.jsp</result>
+		</action>
+	</package>
+	<package name="adminajax" namespace="/adminajax" extends="struts-default,json-default">
+		<action name="setirreglar" class="com.can.admin.action.SetIrregularityTopicAction">
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,92 @@
+@CHARSET "UTF-8";
+
+#learn {
+	width: 1200px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+#learn .tab {
+	width: 260px;
+	height: 270px;
+	overflow: hidden;
+	float: left;
+	margin: 20px;
+	text-align: center;
+	background-color: #fff;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,
+		direction=120, strength=4); /*ie*/
+	-moz-box-shadow: 0px 0px 4px #909090; /*firefox*/
+	-webkit-box-shadow: 0px 0px 4px #909090; /*safari或chrome*/
+	box-shadow: 0px 0px 4px #909090; /*opera或ie9*/
+}
+
+#learn img {
+	width: 60% !important;
+	margin-top: 10px;
+}
+
+#learn .imgcontainer {
+	width: 100%;
+	height: 55%;
+	overflow: hidden;
+}
+
+#learn .tabword {
+	height: 50%;
+	background-color: #f6f7fb;
+	padding: 10px;
+}
+
+#learn .describe {
+	font-size: 12px;
+}
+
+#learn .typeid {
+	display: none;
+}
+
+div.picture {
+	float: left;
+	width: 40%;
+	margin: 5px;
+	overflow: hidden;
+	background-color: #000000;
+	overflow: hidden;
+	/*  加圆角*/
+	
+	/*加阴影  */
+	/* border: #909090 1px solid;
+	color: #333;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,
+		direction=120, strength=3); ie
+	-moz-box-shadow: 2px 2px 10px #909090; firefox
+	-webkit-box-shadow: 2px 2px 10px #909090; safari或chrome
+	box-shadow: 2px 2px 10px #909090; opera或ie9 */
+}
+
+div.pictureright {
+	float: left;
+	width: 55%;
+	background-color: #fff;
+	height: 274px;
+	/* background-image: url("../learn/imagesforroll/earthbg2.png");*/
+	overflow: hidden;
+	margin: 5px 5px auto auto;
+	word-wrap: break-word;
+	/*  加圆角*/
+	
+	/*加阴影  */
+	/* border: #909090 1px solid;
+	color: #333;
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=#909090,
+		direction=120, strength=3); ie
+	-moz-box-shadow: 2px 2px 10px #909090; firefox
+	-webkit-box-shadow: 2px 2px 10px #909090; safari或chrome
+	box-shadow: 2px 2px 10px #909090; opera或ie9 */
+}
+
+.earth {
+	width: 250px;
+	margin: 0 auto;
+}

@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+#index_myfollow{
+	
+	padding: 1px;
+	/*border: 1px solid #ccc;*/
+}
+#index_myfollow a{
+	text-decoration:none;
+	color: #000;
+}
+#index_myfollow a:hover{
+	text-decoration:none;
+
+}
+#index_myfollow .list{
+ 
+}
+#index_myfollow .tab{
+	background-color: #fff;
+	margin-top: 2px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+#index_myfollow .tab:hover{
+	
+}
+#index_myfollow .timeanduser{
+	margin-top: 5px;
+	text-align: right;
+	color: gray;
+}
+#index_myfollow .content{
+	padding: 0px;
+	margin: 0px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+ 	-webkit-box-orient: vertical;
+}
+#index_myfollow img{
+	width: auto;
+	height: auto;
+}
